@@ -89,14 +89,17 @@
       margin-bottom: 28px;
     }
 
+    .btn-wrap {
+      text-align: center;
+    }
+
     a.btn {
-      display: block;
-      width: 100%;
-      background: #111;
+      display: inline-block;
+      background: #f76134;
       color: #fff;
       font-size: clamp(1rem, 4vw, 1.15rem);
       font-weight: 700;
-      padding: 20px 24px;
+      padding: 20px 52px;
       border-radius: 14px;
       text-decoration: none;
       text-align: center;
@@ -106,7 +109,7 @@
     }
 
     a.btn:hover {
-      background: #2a2a2a;
+      background: #e0522a;
       transform: translateY(-2px);
     }
 
@@ -114,11 +117,10 @@
       transform: translateY(0);
     }
 
-    @media (min-width: 480px) {
+    @media (max-width: 400px) {
       a.btn {
-        display: inline-block;
-        width: auto;
-        padding: 20px 52px;
+        display: block;
+        padding: 20px 24px;
       }
     }
   </style>
@@ -154,9 +156,11 @@
       </li>
     </ul>
 
-    <a class="btn" href="https://albitcapital.com/es" target="_blank">
-      Saber más
-    </a>
+    <div class="btn-wrap">
+      <a class="btn" href="https://albitcapital.com/es" target="_blank">
+        Saber más
+      </a>
+    </div>
   </div>
 </body>
 </html>
