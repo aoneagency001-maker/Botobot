@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,57 +18,76 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 24px 16px;
     }
 
     .container {
       text-align: center;
-      padding: 40px 24px;
+      width: 100%;
       max-width: 480px;
     }
 
     h1 {
-      font-size: 2.4rem;
-      font-weight: 700;
+      font-size: clamp(1.8rem, 6vw, 2.6rem);
+      font-weight: 800;
       color: #111;
-      margin-bottom: 16px;
+      margin-bottom: 20px;
       line-height: 1.2;
     }
 
     p {
-      font-size: 1.1rem;
+      font-size: clamp(1rem, 4vw, 1.15rem);
       color: #555;
-      margin-bottom: 40px;
-      line-height: 1.6;
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+
+    .cta-text {
+      font-size: clamp(1rem, 4vw, 1.1rem);
+      color: #111;
+      font-weight: 600;
+      margin-bottom: 32px;
     }
 
     a.btn {
-      display: inline-block;
-      background: #229ED9;
+      display: block;
+      width: 100%;
+      background: #1a56db;
       color: #fff;
-      font-size: 1rem;
-      font-weight: 600;
-      padding: 16px 36px;
-      border-radius: 12px;
+      font-size: clamp(1.1rem, 4.5vw, 1.25rem);
+      font-weight: 700;
+      padding: 20px 24px;
+      border-radius: 14px;
       text-decoration: none;
       transition: background 0.2s, transform 0.1s;
+      letter-spacing: 0.01em;
     }
 
     a.btn:hover {
-      background: #1a8bbf;
-      transform: translateY(-1px);
+      background: #1447c0;
+      transform: translateY(-2px);
     }
 
     a.btn:active {
       transform: translateY(0);
+    }
+
+    @media (min-width: 480px) {
+      a.btn {
+        display: inline-block;
+        width: auto;
+        padding: 20px 48px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Gestión profesional de activos con +20 años de éxito.</h1>
-    <p>Equipo global. Estrategias diversas. Control de riesgos estricto y soporte técnico exclusivo.<br><br>Descubre todos los detalles en nuestro canal de soporte.</p>
-    <a class="btn" href="https://t.me/AlbitSupport" target="_blank">
-      Unirse al canal
+    <p>Equipo global. Estrategias diversas. Control de riesgos estricto y soporte técnico exclusivo.</p>
+    <p class="cta-text">Visita nuestro sitio web para obtener información detallada.</p>
+    <a class="btn" href="https://albitcapital.com/es" target="_blank">
+      Ir al sitio web →
     </a>
   </div>
 </body>
